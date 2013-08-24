@@ -7,9 +7,5 @@ default[:env_vars] = {
   :RUBY_HEAP_SLOTS_INCREMENT => "10000",
   :RUBY_HEAP_SLOTS_GROWTH_FACTOR => "1.8",
   :RUBY_GC_MALLOC_LIMIT => "8000000",
-  :RUBY_HEAP_FREE_MIN => "4096",
-  :DB_NAME => @app[:database_name],
-  :DB_USERNAME => @node[:users][0][:username],
-  :DB_PASSWORD => @node[:users][0][:password],
-  :DB_HOST => @node[:db_host]
+  :RUBY_HEAP_FREE_MIN => "4096"
 }
