@@ -18,7 +18,7 @@
 
 # uncomment to use the sidekiq recipe. See cookbooks/sidekiq/readme.md for documentation.
 # include_recipe "sidekiq"
-# include_recipe "delayed_job"
+include_recipe "delayed_job"
 
 #uncomment to turn on memcached
 # include_recipe "memcached"
@@ -78,7 +78,7 @@
 
 #uncomment to set environment variables in passenger or unicorn
 # Set environment variables as specified in cookbooks/env_vars/attributes/env_vars.rb
-include_recipe "env_vars"
+# include_recipe "env_vars"
 
 
 #uncomment to include the mysql_replication_check recipe
