@@ -17,7 +17,9 @@ if ['solo', 'app', 'app_master', 'util'].include?(node[:instance_role])
       group node[:users].first[:username]
       mode 0744
       variables({
-          :env_vars => node[:env_vars]
+          :env_vars => node[:env_vars],
+          :node => node,
+          :app => app
       })
     end
     

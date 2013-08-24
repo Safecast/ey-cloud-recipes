@@ -18,7 +18,7 @@
 
 # uncomment to use the sidekiq recipe. See cookbooks/sidekiq/readme.md for documentation.
 # include_recipe "sidekiq"
-include_recipe "delayed_job"
+# include_recipe "delayed_job"
 
 #uncomment to turn on memcached
 # include_recipe "memcached"
